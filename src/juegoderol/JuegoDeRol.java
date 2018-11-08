@@ -46,6 +46,7 @@ public class JuegoDeRol {
         {
         System.out.println("Turno de ataque para " + Player1.GetNombre());
         Player2.SetVida(Player2.GetVida()-(CalcularAtaque(Player2.GetAtaque1())));
+            System.out.println(Player2.GetVida());
         }
     
     }
