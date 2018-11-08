@@ -22,8 +22,19 @@ public class JuegoDeRol {
         // TODO code application logic here
     Player Player1 = new Player();
     Player Player2 = new Player();
+    //los datos de charmnander y de rattata se obtienen de la wiki de pokemon
+    //http://es.pokemon.wikia.com
     Player1.SetNombre("Charmander");
     Player1.SetVida(100);
+    Player1.SetNombreAtaque1("Arañazo");
+    Player1.SetAtaque1(40);
+    Player1.SetNombreAtaque2("Gruñido");
+    Player1.SetAtaque2(0);
+    
+    Player2.SetNombre("Rattata");
+    
+    
+    
     }
     
     public Double CalcularAtaque(Double ataque)

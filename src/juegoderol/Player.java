@@ -55,4 +55,25 @@ public class Player {
     {
     return NombreAtaque2;
     }
+    
+    public void SetAtaque1(int ataque1)
+    {
+    this.ataque1 = ataque1;
+    }
+    
+    public int GetAtaque1()
+    {
+    return ataque1;
+    }
+    
+    public void SetAtaque2(int ataque2)
+    {
+    this.ataque2 = ataque2;
+    }
+    
+    public int GetAtaque2()
+    {
+    return ataque2;
+    }
+    
 }
