@@ -45,7 +45,21 @@ public class JuegoDeRol {
         if (turno == 1) 
         {
         System.out.println("Turno de ataque para " + Player1.GetNombre());
-        Player2.SetVida(Player2.GetVida()-(CalcularAtaque(Player2.GetAtaque1())));
+        //RandomizeAtaque va a almacena un valor aleatorio 
+        //para seleccionar entre los dos ataques disponibles
+        int RandomizeAtaque = ThreadLocalRandom.current().nextInt(1, 2+1);
+        if (RandomizeAtaque == 1)
+                {
+                    System.out.println(Player1.GetNombre() + " atacara con ataque: " + Player1.GetNombreAtaque1() );
+                    Player2.SetVida(Player2.GetVida()-(CalcularAtaque(Player1.GetAtaque1())));
+                    System.out.println(Player2.GetVida());
+                }
+        else
+                {
+                System.out.println(Player1.GetNombre() + " atacara con ataque: " + Player1.GetNombreAtaque2() );
+                    Player2.SetVida(Player2.GetVida()-(CalcularAtaque(Player1.GetAtaque2())));
+                    System.out.println(Player2.GetVida());
+                }
         }
     
     }
