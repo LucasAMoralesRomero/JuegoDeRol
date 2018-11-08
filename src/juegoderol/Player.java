@@ -10,7 +10,7 @@ package juegoderol;
 public class Player {
 
     public String nombre;
-    public int vida = 100;
+    public float vida = 100;
     public String NombreAtaque1;
     public int ataque1;
     public String NombreAtaque2;
@@ -26,12 +26,12 @@ public class Player {
     return nombre;
     }
 
-    public void SetVida (int vida)
+    public void SetVida (float vida)
     {
     this.vida = vida;
     }
     
-    public int GetVida()
+    public float GetVida()
     {
     return vida;
     }
