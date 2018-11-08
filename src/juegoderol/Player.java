@@ -35,4 +35,24 @@ public class Player {
     {
     return vida;
     }
+    
+    public void SetNombreAtaque1 (String nombreataque1)
+    {
+    this.NombreAtaque1 = nombreataque1;
+    }
+    
+    public String GetNombreAtaque1()
+    {
+    return NombreAtaque1;
+    }
+    
+    public void SetNombreAtaque2 (String nombreataque2)
+    {
+    this.NombreAtaque2 = nombreataque2;
+    }
+    
+    public String GetNombreAtaque2()
+    {
+    return NombreAtaque2;
+    }
 }

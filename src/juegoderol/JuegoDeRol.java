@@ -4,10 +4,13 @@
  * and open the template in the editor.
  */
 package juegoderol;
-
+import java.util.Random;
+//clase donde se define el player
+import juegoderol.Player;
+        
 /**
  *
- * @author Alumno
+ * @author Lucas A. Morales Romero
  */
 public class JuegoDeRol {
 
@@ -16,6 +19,10 @@ public class JuegoDeRol {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+    Player Player1 = new Player();
+    Player Player2 = new Player();
+    Player1.SetNombre("Charmander");
+    Player1.SetVida(100);
     }
     
 }
