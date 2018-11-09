@@ -46,7 +46,7 @@ public class JuegoDeRol {
         {
         System.out.println("Turno de ataque para " + Player1.GetNombre());
         //RandomizeAtaque va a almacena un valor aleatorio 
-        //para seleccionar entre los dos ataques disponibles.
+        //para seleccionar entre los dos ataques disponibles
         int RandomizeAtaque = ThreadLocalRandom.current().nextInt(1, 2+1);
         if (RandomizeAtaque == 1)
                 {
