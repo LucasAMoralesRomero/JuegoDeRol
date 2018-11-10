@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 package juegoderol;
+//la salida del programa sera tanto grafica por joptionpane como por consola
+import javax.swing.JOptionPane;
 import java.util.Random;
 //clase donde se define el player
 import juegoderol.Player;
@@ -60,10 +62,56 @@ public class JuegoDeRol {
                     Player2.SetVida(Player2.GetVida()-(CalcularAtaque(Player1.GetAtaque2())));
                     System.out.println(Player2.GetVida());
                 }
+        //cambio de turno
+        turno =0;
+        //cheque vida de player atacado, si es menor a cero ajusto a cero
+        if(Player2.GetVida() < 0)
+            {
+            Player2.SetVida(0);
+            }
+        }
+    else
+        {
+        System.out.println("Turno de ataque para " + Player2.GetNombre());
+        //RandomizeAtaque va a almacena un valor aleatorio 
+        //para seleccionar entre los dos ataques disponibles
+        int RandomizeAtaque = ThreadLocalRandom.current().nextInt(1, 2+1);
+        if (RandomizeAtaque == 1)
+                {
+                    System.out.println(Player2.GetNombre() + " atacara con ataque: " + Player2.GetNombreAtaque1() );
+                    Player1.SetVida(Player1.GetVida()-(CalcularAtaque(Player2.GetAtaque1())));
+                    System.out.println(Player1.GetVida());
+                }
+        else
+                {
+                System.out.println(Player2.GetNombre() + " atacara con ataque: " + Player2.GetNombreAtaque2() );
+                    Player1.SetVida(Player1.GetVida()-(CalcularAtaque(Player2.GetAtaque2())));
+                    System.out.println(Player1.GetVida());
+                }
+        //cambio de turno
+        turno =1;
+        //cheque vida de player atacado, si es menor a cero ajusto a cero
+        if(Player1.GetVida() < 0)
+            {
+            Player1.SetVida(0);
+            }
+        
         }
     
     }
     
+    if (Player1.GetVida() == 0)
+    {
+        System.out.println("El ganador de la batalla fue: " + Player2.GetNombre());
+        System.out.println("Vida de " + Player1.GetNombre() + ": " + Player1.GetVida());
+        System.out.println("Vida de " + Player2.GetNombre() + ": " + Player2.GetVida());
+    }
+    else
+    {
+        System.out.println("El ganador de la batalla fue: " + Player1.GetNombre());
+        System.out.println("Vida de " + Player1.GetNombre() + ": " + Player1.GetVida());
+        System.out.println("Vida de " + Player2.GetNombre() + ": " + Player2.GetVida());
+    }
     
     }
     
