@@ -15,6 +15,8 @@ public class Player {
     public double ataque1;
     public String NombreAtaque2;
     public double ataque2;
+    //imagen guarda la ruta de la imagen del pesonaje
+    public String imagen;
     
     public void SetNombre (String nombre)
     {
@@ -76,4 +78,13 @@ public class Player {
     return ataque2;
     }
     
+    public void SetImagen (String imagen)
+    {
+    this.imagen = imagen;
+    }
+    
+    public String GetImagen()
+    {
+    return imagen;
+    }
 }

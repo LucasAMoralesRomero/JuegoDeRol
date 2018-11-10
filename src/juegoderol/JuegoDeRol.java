@@ -6,6 +6,8 @@
 package juegoderol;
 //la salida del programa sera tanto grafica por joptionpane como por consola
 import javax.swing.JOptionPane;
+//permite cargar una imagen personalizada joptionpane
+import javax.swing.ImageIcon;
 import java.util.Random;
 //clase donde se define el player
 import juegoderol.Player;
@@ -47,6 +49,7 @@ public class JuegoDeRol {
     {
         if (turno == 1) 
         {
+        
         System.out.println("Turno de ataque para " + Player1.GetNombre());
         //RandomizeAtaque va a almacena un valor aleatorio 
         //para seleccionar entre los dos ataques disponibles
