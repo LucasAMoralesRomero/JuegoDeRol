@@ -26,7 +26,7 @@ public class JuegoDeRol {
     Player Player2 = new Player();
     //el int turno nos permite determinar de quien es el turno de atacar
     int turno = 1;
-    //los datos de charmnander y de rattata se obtienen de la wiki de pokemon
+    //los datos de charmander y de rattata se obtienen de la wiki de pokemon
     //http://es.pokemon.wikia.com
     Player1.SetNombre("Charmander");
     Player1.SetVida(100);
