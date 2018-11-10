@@ -42,6 +42,7 @@ public class JuegoDeRol {
     Player2.SetNombreAtaque2("Latigo");
     Player2.SetAtaque2(1);
     
+    
     while (Player1.vida > 0 & Player2.vida > 0) 
     {
         if (turno == 1) 
